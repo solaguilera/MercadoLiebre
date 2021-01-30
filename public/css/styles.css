@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    background-color: #eac926;
+    padding: 15px;
+}
+.main-header-top-bar {
+    padding: 15px;
+}
+#logo {
+    min-height: 150px;
+}
+#header-search-form {
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.header-text {
+    padding: 20px;
+}
+.main-header-bottom-bar {
+    color: #666;
+}
+main {
+    margin: 0 auto;
+    width: 90%;
+    background-color: #ebebeb;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.burger-menu {
+    background-color: #03264C;
+    color: white;
+    display: block;
+    max-width: 30px;
+    border-radius: 7px;
+    padding: 2%;
+    margin: 0 auto;
+    text-align: center;
+}
+#banner-top {
+    float: left;
+    width: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+article {
+    background-color: white;
+    flex:0 50%;
+}
+.article-box>img {
+    max-width: 30%;
+}
+img {
+    width: 100%;
+}
+
+.text-titular {
+    font-weight: bold;
+    font-size: 24px;
+    color: #666666;
+    display: inline-block;
+    width: 100vw;
+}
+.price-disc-box {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.text-precio {
+    font-size: 18px;
+    width: 30%;
+}
+.text-desc {
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+}
+.text-description {
+    font-size: 16px;
+    color: #666;
+    display: none;
+    margin: 10px 0;
+}
+.text-cuerpo {
+    font-size: 12px;
+    margin: 0 0 0 0;
+}
+.text-titular-footer {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 0 0;
+}
+
+article {
+    margin: 10px;
+}
+.products-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.article-box {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+}
+
+.fa-truck {
+    display: block;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #39b54a;
+    padding: 5px;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: transform 1000ms;
+}
+
+footer {
+    background-color: white;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    position: unset;
+    bottom: 0;   
+}
+
+footer i {
+    color: #1259c3;
+    size: 24px;
+    padding-top: 24px;
+}
+
+footer div {
+    text-align: center;
+    color: #666;
+}
+
+.footer-item {
+    margin: auto;
+    padding: 10px;
+}
+
+#text-copyright {
+    text-align: left;
+    font-size: 12px;
+    padding: 15px;
+}
+.registration-form {
+    background-color: white;
+    border-radius: 20px;
+
+}
+.registration-box {
+    display: block;
+    margin: 5px 0;
+    padding: 5px 0;
+}
+.registration-box-label {
+    display: block;
+    padding-bottom: 5px;
+    margin: 5px 0;
+}
+.registration-box > ul {
+    text-align: left;
+    margin-left: 30%;
+    list-style: none;
+}
+.buy-sell {
+    display: inline;
+}
+.registration-box > ul > li {
+    margin: 10px 0;
+}
+.login-form, .registration-form {
+    margin: 10px;
+    width: 80%;
+    display: inline-block;
+}
+.login-form-box, .registration-form-box {
+    background-color: white;
+    border-radius: 20px;
+    margin: 10% 0;
+    text-align: center;
+}
+.login-form-box {
+    padding-top: 20px;
+}
+.registration-form-box {
+    padding-top: 5px;
+    margin: 5% 0;
+}
+
+.login-input, .registration-box-input {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.login-button, #create-account-button {
+    background-color: #666;
+}
+.reset-button, .login-button, #create-account-button {
+    padding: 5px;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#buy, #sell {
+    display: inline-block;
+}
+#profile-pic {
+    color: transparent;
+}
+.login-button > a, #create-account-button > a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-button:hover, #create-account-button:hover {
+    background-color: #0022AA;
+}
+.reset-button:hover {
+    background-color: #666;
+    color: white;
+}
+@media (max-width: 480px) {
+    nav ul {
+        display: none;
+    }
+ 
+}
+@media (min-width: 481px) {
+    .burger-menu {
+        display: none;
+    }
+
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-text {
+        max-width: 350px;
+        text-align: right;
+    }
+
+    #logo {
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav li {
+        margin: 0 5px;
+    }
+
+    .products-box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .one-product {
+        flex: 1 0 40%;
+    }
+
+    .one-product:hover  .text-description {
+        display: block;
+    }
+    
+    .one-product:hover .fa-truck {
+        transform: rotate(360deg); 
+    }
+    
+    .one-product:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .footer-item-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .footer-item {
+        width: 30%;
+    }
+
+    .footer-item:hover .icon-footer {
+        color: #39b54a;
+    }
+}
+
+@media (min-width: 761px) {
+    .main-header-top-bar nav {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    nav li {
+        margin: 0 10px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .header-text {
+        max-width: none;
+    }
+
+    #logo {
+        max-width: 300px;
+    }
+
+    .products-box {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .one-product {
+        flex: 1 0 15%;
+    }
+
+    #login-footer {
+        position: fixed;
+        bottom: 0;
+    }
+} 
